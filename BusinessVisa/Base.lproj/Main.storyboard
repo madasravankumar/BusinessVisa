@@ -1,26 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BusinessVisa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m5C-3E-6HM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WcZ-Ne-edR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUDDY TRAVEL GUIDE" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="2qs-pg-ZUt">
+                                        <rect key="frame" x="35" y="269.5" width="250" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="s5R-gB-1Lu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajR-HG-XdI">
+                                        <rect key="frame" x="35" y="308.5" width="250" height="62.5"/>
+                                        <string key="text">Choose from hand-picked sights and activities from New York and around and your daily travel routers,restuarents and check list in just a few taps</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ajR-HG-XdI" firstAttribute="trailing" secondItem="2qs-pg-ZUt" secondAttribute="trailing" id="a4N-ZQ-7Fg"/>
+                                    <constraint firstItem="ajR-HG-XdI" firstAttribute="width" secondItem="2qs-pg-ZUt" secondAttribute="width" id="afv-1K-q4V"/>
+                                    <constraint firstItem="2qs-pg-ZUt" firstAttribute="centerX" secondItem="WcZ-Ne-edR" secondAttribute="centerX" id="gT5-th-eXT"/>
+                                    <constraint firstItem="ajR-HG-XdI" firstAttribute="leading" secondItem="2qs-pg-ZUt" secondAttribute="leading" id="lzx-4E-mAm"/>
+                                    <constraint firstItem="ajR-HG-XdI" firstAttribute="top" secondItem="2qs-pg-ZUt" secondAttribute="bottom" constant="10" id="npt-SH-ImL"/>
+                                    <constraint firstItem="2qs-pg-ZUt" firstAttribute="centerY" secondItem="WcZ-Ne-edR" secondAttribute="centerY" id="t72-ae-orr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WcZ-Ne-edR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="0CU-KM-BXi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WcZ-Ne-edR" secondAttribute="trailing" constant="-16" id="0d5-fa-tnI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WcZ-Ne-edR" secondAttribute="bottom" id="4Oe-lD-rNe"/>
+                            <constraint firstItem="m5C-3E-6HM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="69V-3t-Mzi"/>
+                            <constraint firstItem="WcZ-Ne-edR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cUA-PU-XW2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m5C-3E-6HM" secondAttribute="bottom" id="ep9-1j-6v9"/>
+                            <constraint firstAttribute="trailing" secondItem="m5C-3E-6HM" secondAttribute="trailing" id="sTt-7a-qab"/>
+                            <constraint firstItem="m5C-3E-6HM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vac-Oa-uFS"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.875" y="137.5"/>
         </scene>
     </scenes>
 </document>
