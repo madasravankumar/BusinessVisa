@@ -10,6 +10,10 @@
 		1F105CD61DF8F8FC00AF7101 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F105CD41DF8F8FC00AF7101 /* TabBar.storyboard */; };
 		1F105CDC1DF8F9C700AF7101 /* Travel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F105CDA1DF8F9C700AF7101 /* Travel.storyboard */; };
 		1F105CDF1DF8FA4400AF7101 /* Checklist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F105CDD1DF8FA4400AF7101 /* Checklist.storyboard */; };
+		1F105CE21DF8FDE800AF7101 /* BV_TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105CE11DF8FDE800AF7101 /* BV_TabBarController.swift */; };
+		1F105CE51DF8FF5500AF7101 /* BV_ChecklistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105CE41DF8FF5500AF7101 /* BV_ChecklistVC.swift */; };
+		1F105CE71DF9041A00AF7101 /* BusinessVisa.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F105CE61DF9041A00AF7101 /* BusinessVisa.json */; };
+		1F105CEA1DF909D400AF7101 /* BV_JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105CE91DF909D400AF7101 /* BV_JsonData.swift */; };
 		726573A51DF729D500BEDEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726573A41DF729D500BEDEDF /* AppDelegate.swift */; };
 		726573A71DF729D500BEDEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726573A61DF729D500BEDEDF /* ViewController.swift */; };
 		726573AA1DF729D500BEDEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726573A81DF729D500BEDEDF /* Main.storyboard */; };
@@ -22,6 +26,10 @@
 		1F105CD51DF8F8FC00AF7101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		1F105CDB1DF8F9C700AF7101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Travel.storyboard; sourceTree = "<group>"; };
 		1F105CDE1DF8FA4400AF7101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Checklist.storyboard; sourceTree = "<group>"; };
+		1F105CE11DF8FDE800AF7101 /* BV_TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BV_TabBarController.swift; path = TabController/BV_TabBarController.swift; sourceTree = "<group>"; };
+		1F105CE41DF8FF5500AF7101 /* BV_ChecklistVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BV_ChecklistVC.swift; path = TabController/ChecklistController/BV_ChecklistVC.swift; sourceTree = "<group>"; };
+		1F105CE61DF9041A00AF7101 /* BusinessVisa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BusinessVisa.json; sourceTree = "<group>"; };
+		1F105CE91DF909D400AF7101 /* BV_JsonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BV_JsonData.swift; path = Singleton/BV_JsonData.swift; sourceTree = "<group>"; };
 		726573A11DF729D500BEDEDF /* BusinessVisa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessVisa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726573A41DF729D500BEDEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726573A61DF729D500BEDEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F105CE01DF8FDA200AF7101 /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				1F105CE11DF8FDE800AF7101 /* BV_TabBarController.swift */,
+				1F105CE31DF8FF1D00AF7101 /* ChecklistController */,
+			);
+			name = TabController;
+			sourceTree = "<group>";
+		};
+		1F105CE31DF8FF1D00AF7101 /* ChecklistController */ = {
+			isa = PBXGroup;
+			children = (
+				1F105CE41DF8FF5500AF7101 /* BV_ChecklistVC.swift */,
+			);
+			name = ChecklistController;
+			sourceTree = "<group>";
+		};
+		1F105CE81DF9099E00AF7101 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				1F105CE91DF909D400AF7101 /* BV_JsonData.swift */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
 		726573981DF729D500BEDEDF = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +95,15 @@
 		726573A31DF729D500BEDEDF /* BusinessVisa */ = {
 			isa = PBXGroup;
 			children = (
+				1F105CE81DF9099E00AF7101 /* Singleton */,
+				1F105CE01DF8FDA200AF7101 /* TabController */,
 				726573A41DF729D500BEDEDF /* AppDelegate.swift */,
 				726573A61DF729D500BEDEDF /* ViewController.swift */,
 				726573A81DF729D500BEDEDF /* Main.storyboard */,
 				1F105CD41DF8F8FC00AF7101 /* TabBar.storyboard */,
 				1F105CDD1DF8FA4400AF7101 /* Checklist.storyboard */,
 				1F105CDA1DF8F9C700AF7101 /* Travel.storyboard */,
+				1F105CE61DF9041A00AF7101 /* BusinessVisa.json */,
 				726573AE1DF729D500BEDEDF /* Assets.xcassets */,
 				726573B01DF729D500BEDEDF /* LaunchScreen.storyboard */,
 				726573B31DF729D500BEDEDF /* Info.plist */,
@@ -102,6 +138,7 @@
 		726573991DF729D500BEDEDF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BV_;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Gemini;
@@ -137,6 +174,7 @@
 			files = (
 				1F105CD61DF8F8FC00AF7101 /* TabBar.storyboard in Resources */,
 				1F105CDF1DF8FA4400AF7101 /* Checklist.storyboard in Resources */,
+				1F105CE71DF9041A00AF7101 /* BusinessVisa.json in Resources */,
 				726573B21DF729D500BEDEDF /* LaunchScreen.storyboard in Resources */,
 				726573AF1DF729D500BEDEDF /* Assets.xcassets in Resources */,
 				726573AA1DF729D500BEDEDF /* Main.storyboard in Resources */,
@@ -152,8 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				726573AD1DF729D500BEDEDF /* BusinessVisa.xcdatamodeld in Sources */,
+				1F105CEA1DF909D400AF7101 /* BV_JsonData.swift in Sources */,
 				726573A71DF729D500BEDEDF /* ViewController.swift in Sources */,
+				1F105CE51DF8FF5500AF7101 /* BV_ChecklistVC.swift in Sources */,
 				726573A51DF729D500BEDEDF /* AppDelegate.swift in Sources */,
+				1F105CE21DF8FDE800AF7101 /* BV_TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusinessVisa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gemini.BusinessVisa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -311,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BusinessVisa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gemini.BusinessVisa;
 				PRODUCT_NAME = "$(TARGET_NAME)";

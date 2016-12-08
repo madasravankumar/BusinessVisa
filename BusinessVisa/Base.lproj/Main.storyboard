@@ -51,6 +51,9 @@
                                         <state key="normal" title="START YOUR TRIP!">
                                             <color key="titleColor" red="0.75686274509999996" green="0.54117647059999996" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="startButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0nt-so-eoz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

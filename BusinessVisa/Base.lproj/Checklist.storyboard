@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e4X-eI-S3p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ChecklistVC-->
         <scene sceneID="vtR-8x-Xej">
             <objects>
-                <viewController id="BK4-6e-BJZ" sceneMemberID="viewController">
+                <viewController id="BK4-6e-BJZ" customClass="BV_ChecklistVC" customModule="BusinessVisa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyF-jT-tiK"/>
                         <viewControllerLayoutGuide type="bottom" id="Vw7-pB-u4D"/>
@@ -24,14 +28,13 @@
             </objects>
             <point key="canvasLocation" x="856.79999999999995" y="-693.10344827586209"/>
         </scene>
-        <!--Item 1-->
+        <!--Checklist-->
         <scene sceneID="Te2-zP-UNA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e4X-eI-S3p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="nBp-6f-SrE"/>
+                    <tabBarItem key="tabBarItem" title="Checklist" id="nBp-6f-SrE"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hbm-M7-pSV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
