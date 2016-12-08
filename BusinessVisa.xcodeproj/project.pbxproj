@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F105CD61DF8F8FC00AF7101 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F105CD41DF8F8FC00AF7101 /* TabBar.storyboard */; };
+		1F105CDC1DF8F9C700AF7101 /* Travel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F105CDA1DF8F9C700AF7101 /* Travel.storyboard */; };
 		726573A51DF729D500BEDEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726573A41DF729D500BEDEDF /* AppDelegate.swift */; };
 		726573A71DF729D500BEDEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726573A61DF729D500BEDEDF /* ViewController.swift */; };
 		726573AA1DF729D500BEDEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726573A81DF729D500BEDEDF /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F105CD51DF8F8FC00AF7101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
+		1F105CDB1DF8F9C700AF7101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Travel.storyboard; sourceTree = "<group>"; };
 		726573A11DF729D500BEDEDF /* BusinessVisa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessVisa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726573A41DF729D500BEDEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726573A61DF729D500BEDEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				726573A41DF729D500BEDEDF /* AppDelegate.swift */,
 				726573A61DF729D500BEDEDF /* ViewController.swift */,
 				726573A81DF729D500BEDEDF /* Main.storyboard */,
+				1F105CD41DF8F8FC00AF7101 /* TabBar.storyboard */,
+				1F105CDA1DF8F9C700AF7101 /* Travel.storyboard */,
 				726573AE1DF729D500BEDEDF /* Assets.xcassets */,
 				726573B01DF729D500BEDEDF /* LaunchScreen.storyboard */,
 				726573B31DF729D500BEDEDF /* Info.plist */,
@@ -126,9 +132,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F105CD61DF8F8FC00AF7101 /* TabBar.storyboard in Resources */,
 				726573B21DF729D500BEDEDF /* LaunchScreen.storyboard in Resources */,
 				726573AF1DF729D500BEDEDF /* Assets.xcassets in Resources */,
 				726573AA1DF729D500BEDEDF /* Main.storyboard in Resources */,
+				1F105CDC1DF8F9C700AF7101 /* Travel.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +156,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1F105CD41DF8F8FC00AF7101 /* TabBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F105CD51DF8F8FC00AF7101 /* Base */,
+			);
+			name = TabBar.storyboard;
+			sourceTree = "<group>";
+		};
+		1F105CDA1DF8F9C700AF7101 /* Travel.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F105CDB1DF8F9C700AF7101 /* Base */,
+			);
+			name = Travel.storyboard;
+			sourceTree = "<group>";
+		};
 		726573A81DF729D500BEDEDF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,6 +325,7 @@
 				726573B81DF729D500BEDEDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
