@@ -38,6 +38,9 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
         let jsonObject = BV_JsonData.sharedInstance.jsonObject
         print(jsonObject)
         
+        
+        self.title = "B1 Procedure"
+        
         sections = [
             Section(name: "Mac", items: ["MacBook", "MacBook Air", "MacBook Pro", "iMac", "Mac Pro", "Mac mini", "Accessories", "OS X El Capitan"]),
             Section(name: "iPad", items: ["iPad Pro", "iPad Air 2", "iPad mini 4", "Accessories"]),
@@ -81,6 +84,11 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.textLabel?.text = sections[indexPath.section].items[indexPath.row]
         
+        cell.detailTextLabel?.text = "asdfasdfas asdfasdfasdf asdfasdsd"
+        
+        
+        cell.imageView?.image = UIImage(named: "icon-cover@2x.png")
+        
         return cell
         
     }
@@ -97,6 +105,9 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    
+    /*
+     
     func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return sections[indexPath.section].collapsed! ? 0 : 44.0
     }
@@ -108,7 +119,7 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 1.0
     }
-
+*/
     
 }
 
