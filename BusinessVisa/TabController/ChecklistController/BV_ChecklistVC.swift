@@ -70,7 +70,7 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // MARK: - UITableViewDataSource Methods
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sections.count
+        return 1 //sections.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,6 +81,8 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell? ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
+        
+        cell.selectionStyle = .none
         
         cell.textLabel?.text = sections[indexPath.section].items[indexPath.row]
         

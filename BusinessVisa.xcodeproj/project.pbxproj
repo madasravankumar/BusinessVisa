@@ -15,6 +15,7 @@
 		1F105CE71DF9041A00AF7101 /* BusinessVisa.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F105CE61DF9041A00AF7101 /* BusinessVisa.json */; };
 		1F105CEA1DF909D400AF7101 /* BV_JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105CE91DF909D400AF7101 /* BV_JsonData.swift */; };
 		71198B551DFEC8A80071B550 /* icon-cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71198B541DFEC8A80071B550 /* icon-cover@2x.png */; };
+		71198B5D1E00477C0071B550 /* Food.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71198B5B1E00477C0071B550 /* Food.storyboard */; };
 		726573A51DF729D500BEDEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726573A41DF729D500BEDEDF /* AppDelegate.swift */; };
 		726573A71DF729D500BEDEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726573A61DF729D500BEDEDF /* ViewController.swift */; };
 		726573AA1DF729D500BEDEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726573A81DF729D500BEDEDF /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		1F105CE61DF9041A00AF7101 /* BusinessVisa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BusinessVisa.json; sourceTree = "<group>"; };
 		1F105CE91DF909D400AF7101 /* BV_JsonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BV_JsonData.swift; path = Singleton/BV_JsonData.swift; sourceTree = "<group>"; };
 		71198B541DFEC8A80071B550 /* icon-cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-cover@2x.png"; sourceTree = "<group>"; };
+		71198B5C1E00477C0071B550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Food.storyboard; sourceTree = "<group>"; };
 		726573A11DF729D500BEDEDF /* BusinessVisa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessVisa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726573A41DF729D500BEDEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726573A61DF729D500BEDEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				726573A61DF729D500BEDEDF /* ViewController.swift */,
 				726573A81DF729D500BEDEDF /* Main.storyboard */,
 				1F105CD41DF8F8FC00AF7101 /* TabBar.storyboard */,
+				71198B5B1E00477C0071B550 /* Food.storyboard */,
 				1F105CDD1DF8FA4400AF7101 /* Checklist.storyboard */,
 				1F105CDA1DF8F9C700AF7101 /* Travel.storyboard */,
 				1F105CE61DF9041A00AF7101 /* BusinessVisa.json */,
@@ -175,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71198B5D1E00477C0071B550 /* Food.storyboard in Resources */,
 				1F105CD61DF8F8FC00AF7101 /* TabBar.storyboard in Resources */,
 				1F105CDF1DF8FA4400AF7101 /* Checklist.storyboard in Resources */,
 				1F105CE71DF9041A00AF7101 /* BusinessVisa.json in Resources */,
@@ -227,6 +231,14 @@
 				1F105CDE1DF8FA4400AF7101 /* Base */,
 			);
 			name = Checklist.storyboard;
+			sourceTree = "<group>";
+		};
+		71198B5B1E00477C0071B550 /* Food.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71198B5C1E00477C0071B550 /* Base */,
+			);
+			name = Food.storyboard;
 			sourceTree = "<group>";
 		};
 		726573A81DF729D500BEDEDF /* Main.storyboard */ = {
