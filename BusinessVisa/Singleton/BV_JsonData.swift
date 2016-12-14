@@ -16,8 +16,8 @@ class BV_JsonData: NSObject {
         if let jsonPath = Bundle.main.path(forResource: "BusinessVisa", ofType: "json") {
             if let jsonData = NSData(contentsOfFile: jsonPath) {
                 do {
-                    let jsonResults =  try JSONSerialization.jsonObject(with: jsonData as Data, options: .mutableContainers) as! NSDictionary
-                    return jsonResults
+                    let jsonResults =  try JSONSerialization.jsonObject(with: jsonData as Data, options: .mutableContainers) as! NSArray
+                    return jsonResults[0] as! NSDictionary
                 }catch {
                     print("Error!! Unable to parse .json")
                 }

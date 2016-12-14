@@ -28,7 +28,8 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
 
     
     @IBOutlet weak var table: UITableView!
-    var tableArray = ""
+    var tableArray = ["MacBook", "MacBook Air", "MacBook Pro", "iMac", "Mac Pro", "Mac mini", "Accessories", "OS X El Capitan"]
+    
     var sections = [Section]()
     
     override func viewDidLoad() {
@@ -37,15 +38,19 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view.
         let jsonObject = BV_JsonData.sharedInstance.jsonObject
         print(jsonObject)
+       
+        //tableArray = jsonObject["ListOfItems"] as? ns
         
         
-        self.title = "B1 Procedure"
+        self.title = jsonObject["CheckList"] as! String//"B1 Procedure"
         
         sections = [
             Section(name: "Mac", items: ["MacBook", "MacBook Air", "MacBook Pro", "iMac", "Mac Pro", "Mac mini", "Accessories", "OS X El Capitan"]),
             Section(name: "iPad", items: ["iPad Pro", "iPad Air 2", "iPad mini 4", "Accessories"]),
             Section(name: "iPhone", items: ["iPhone 6s", "iPhone 6", "iPhone SE", "Accessories"]),
         ]
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,7 +80,7 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return alphNames.count
-        return sections[section].items.count
+        return tableArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -84,7 +89,7 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.selectionStyle = .none
         
-        cell.textLabel?.text = sections[indexPath.section].items[indexPath.row]
+        cell.textLabel?.text = tableArray[indexPath.row]
         
         cell.detailTextLabel?.text = "asdfasdfas asdfasdfasdf asdfasdsd"
         
@@ -96,10 +101,11 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
 
-  
+  /*
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section].name
+        return tableArray.name
     }
+ */
     
     // MARK: - UITableViewDelegate Methods
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
