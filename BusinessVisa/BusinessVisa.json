@@ -1,162 +1,126 @@
  [
   {
-  "CheckList": "USA Trip",
+  "Title": "Check List",
   "subTitle": "Visa Checklist & POE Guidlines",
   "ListOfItems": [
                   {
-                  "titile": "B1 Process",
+                  "title": "B1 Process",
                   "subTitle": "Application and Interview Checklist",
+                  "image": "VISA PROCESS",
                   "ListOfItems": [
                                   {
-                                  "titile": "Before Applications",
+                                  "title": "Before Applications",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Biometrics",
+                                  "title": "Biometrics",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Interview",
+                                  "title": "Interview",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Visa Pickup",
+                                  "title": "Visa Pickup",
                                   "subTitle": ""
                                   }
                                   ]
                   },
                   {
-                  "titile": "Departure",
+                  "title": "Departure And Arrival",
                   "subTitle": "Must Carry Documents and guidelines",
+                  "image": "Depature",
                   "ListOfItems": [
                                   {
-                                  "titile": "Documents",
+                                  "title": "Documents",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Baggage",
+                                  "title": "Baggage",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Flight",
+                                  "title": "Flight",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Port of Entry",
+                                  "title": "Port of Entry",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "194",
+                                  "title": "194",
                                   "subTitle": ""
                                   }
                                   ]
                   },
                   {
-                  "titile": "Return",
+                  "title": "Port of Entry FAQ",
                   "subTitle": "Must Carry",
+                  "image": "VISA PROCESS",
                   "ListOfItems": [
                                   {
-                                  "titile": "Tickets",
+                                  "title": "Tickets",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Passport",
+                                  "title": "Passport",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Interview",
+                                  "title": "Interview",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Visa Pickup",
+                                  "title": "Visa Pickup",
                                   "subTitle": ""
                                   }
                                   ]
-                  }
-                  ]
-  },
-  {
-  "CheckList": "Packing",
-  "subTitle": "Items to Pack",
-  "ListOfItems": [
-                  {
-                  "titile": "B1 Process",
-                  "subTitle": "Application and Interview Checklist",
+                  },{
+                  "title": "After Admission into the U.S",
+                  "subTitle": "Must Carry",
+                  "image": "Depature",
                   "ListOfItems": [
                                   {
-                                  "titile": "Before Applications",
+                                  "title": "Tickets",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Biometrics",
+                                  "title": "Passport",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Interview",
+                                  "title": "Interview",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Visa Pickup",
+                                  "title": "Visa Pickup",
                                   "subTitle": ""
                                   }
                                   ]
-                  }
-                  ]
-  },
-  {
-  "CheckList": "Access",
-  "subTitle": "ID Card, Room Keys Etc",
-  "ListOfItems": [
-                  {
-                  "titile": "B1 Process",
-                  "subTitle": "Application and Interview Checklist",
+                  },{
+                  "title": "Return from U.S",
+                  "subTitle": "Must Carry",
+                  "image": "Return",
                   "ListOfItems": [
                                   {
-                                  "titile": "Before Applications",
+                                  "title": "Tickets",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Biometrics",
+                                  "title": "Passport",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Interview",
+                                  "title": "Interview",
                                   "subTitle": ""
                                   },
                                   {
-                                  "titile": "Visa Pickup",
-                                  "subTitle": ""
-                                  }
-                                  ]
-                  }
-                  ]
-  },
-  {
-  "CheckList": "Shopping",
-  "subTitle": "Wish List",
-  "ListOfItems": [
-                  {
-                  "titile": "B1 Process",
-                  "subTitle": "Application and Interview Checklist",
-                  "ListOfItems": [
-                                  {
-                                  "titile": "Before Applications",
-                                  "subTitle": ""
-                                  },
-                                  {
-                                  "titile": "Biometrics",
-                                  "subTitle": ""
-                                  },
-                                  {
-                                  "titile": "Interview",
-                                  "subTitle": ""
-                                  },
-                                  {
-                                  "titile": "Visa Pickup",
+                                  "title": "Visa Pickup",
                                   "subTitle": ""
                                   }
                                   ]
                   }
                   ]
   }
+  
   ]

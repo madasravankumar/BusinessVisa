@@ -12,14 +12,10 @@ import UIKit
 // MARK: - Section Data Structure
 //
 struct Section {
-    var name: String!
-    var items: [String]!
-    var collapsed: Bool!
+    var checkListData: NSDictionary!
     
-    init(name: String, items: [String], collapsed: Bool = false) {
-        self.name = name
-        self.items = items
-        self.collapsed = collapsed
+    init(checkListData: NSDictionary) {
+        self.checkListData = checkListData
     }
 }
 
@@ -28,7 +24,6 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
 
     
     @IBOutlet weak var table: UITableView!
-    var tableArray = ["MacBook", "MacBook Air", "MacBook Pro", "iMac", "Mac Pro", "Mac mini", "Accessories", "OS X El Capitan"]
     
     var sections = [Section]()
     
@@ -37,28 +32,19 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
 
         // Do any additional setup after loading the view.
         let jsonObject = BV_JsonData.sharedInstance.jsonObject
-        print(jsonObject)
-       
-        //tableArray = jsonObject["ListOfItems"] as? ns
+        let listOfItems: NSArray = jsonObject.object(forKey: "ListOfItems") as! NSArray
         
-        
-        self.title = jsonObject["CheckList"] as! String//"B1 Procedure"
-        
-        sections = [
-            Section(name: "Mac", items: ["MacBook", "MacBook Air", "MacBook Pro", "iMac", "Mac Pro", "Mac mini", "Accessories", "OS X El Capitan"]),
-            Section(name: "iPad", items: ["iPad Pro", "iPad Air 2", "iPad mini 4", "Accessories"]),
-            Section(name: "iPhone", items: ["iPhone 6s", "iPhone 6", "iPhone SE", "Accessories"]),
-        ]
-        
-        
+        for item in listOfItems  {
+            let checkListItem: Section = Section(checkListData: item as! NSDictionary);
+            sections.append(checkListItem)
+        }
+        self.title = jsonObject["CheckList"] as? String
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
     /*
     // MARK: - Navigation
@@ -80,21 +66,20 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return alphNames.count
-        return tableArray.count
+        return sections.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell? ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "checklistCell", for: indexPath) as UITableViewCell
         
-        cell.selectionStyle = .none
+        let checkListItem: Section = sections[indexPath.row]
+        let itemDict: NSDictionary = checkListItem.checkListData as NSDictionary
+        let imageView = cell.contentView.viewWithTag(10) as! UIImageView
+        let titleLbl = cell.contentView.viewWithTag(20) as! UILabel
         
-        cell.textLabel?.text = tableArray[indexPath.row]
-        
-        cell.detailTextLabel?.text = "asdfasdfas asdfasdfasdf asdfasdsd"
-        
-        
-        cell.imageView?.image = UIImage(named: "icon-cover@2x.png")
+        titleLbl.text = itemDict["title"] as! String?
+        imageView.image = UIImage(named: itemDict.object(forKey: "image") as! String)
         
         return cell
         

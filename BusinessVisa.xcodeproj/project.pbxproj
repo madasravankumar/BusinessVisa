@@ -21,8 +21,8 @@
 		726573A71DF729D500BEDEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726573A61DF729D500BEDEDF /* ViewController.swift */; };
 		726573AA1DF729D500BEDEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726573A81DF729D500BEDEDF /* Main.storyboard */; };
 		726573AD1DF729D500BEDEDF /* BusinessVisa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 726573AB1DF729D500BEDEDF /* BusinessVisa.xcdatamodeld */; };
-		726573AF1DF729D500BEDEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726573AE1DF729D500BEDEDF /* Assets.xcassets */; };
 		726573B21DF729D500BEDEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726573B01DF729D500BEDEDF /* LaunchScreen.storyboard */; };
+		CA1C87BA1E23988E00297EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1C87B91E23988E00297EE9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +41,9 @@
 		726573A61DF729D500BEDEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		726573A91DF729D500BEDEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		726573AC1DF729D500BEDEDF /* BusinessVisa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BusinessVisa.xcdatamodel; sourceTree = "<group>"; };
-		726573AE1DF729D500BEDEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726573B11DF729D500BEDEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726573B31DF729D500BEDEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1C87B91E23988E00297EE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				1F105CDA1DF8F9C700AF7101 /* Travel.storyboard */,
 				1F105CE61DF9041A00AF7101 /* BusinessVisa1.json */,
 				71198B601E01769C0071B550 /* BusinessVisa.json */,
-				726573AE1DF729D500BEDEDF /* Assets.xcassets */,
+				CA1C87B91E23988E00297EE9 /* Assets.xcassets */,
 				726573B01DF729D500BEDEDF /* LaunchScreen.storyboard */,
 				726573B31DF729D500BEDEDF /* Info.plist */,
 				726573AB1DF729D500BEDEDF /* BusinessVisa.xcdatamodeld */,
@@ -185,10 +185,10 @@
 				1F105CD61DF8F8FC00AF7101 /* TabBar.storyboard in Resources */,
 				71198B611E01769C0071B550 /* BusinessVisa.json in Resources */,
 				1F105CDF1DF8FA4400AF7101 /* Checklist.storyboard in Resources */,
+				CA1C87BA1E23988E00297EE9 /* Assets.xcassets in Resources */,
 				1F105CE71DF9041A00AF7101 /* BusinessVisa1.json in Resources */,
 				71198B551DFEC8A80071B550 /* icon-cover@2x.png in Resources */,
 				726573B21DF729D500BEDEDF /* LaunchScreen.storyboard in Resources */,
-				726573AF1DF729D500BEDEDF /* Assets.xcassets in Resources */,
 				726573AA1DF729D500BEDEDF /* Main.storyboard in Resources */,
 				1F105CDC1DF8F9C700AF7101 /* Travel.storyboard in Resources */,
 			);

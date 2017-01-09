@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e4X-eI-S3p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e4X-eI-S3p">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,6 +25,41 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="checklistCell" id="myE-Ut-JVl">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="myE-Ut-JVl" id="YtP-Uy-0sj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="JP8-0x-aot">
+                                                    <rect key="frame" x="20" y="14" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="X5r-ip-8lX"/>
+                                                        <constraint firstAttribute="width" constant="32" id="g1C-5k-jvN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3O-FS-Z4y">
+                                                    <rect key="frame" x="60" y="15" width="295" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="ONk-Dk-Dpq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JP8-0x-aot" firstAttribute="leading" secondItem="YtP-Uy-0sj" secondAttribute="leading" constant="20" id="3Zk-Fh-rMx"/>
+                                                <constraint firstItem="u3O-FS-Z4y" firstAttribute="leading" secondItem="JP8-0x-aot" secondAttribute="trailing" constant="8" id="996-Kk-bvO"/>
+                                                <constraint firstItem="JP8-0x-aot" firstAttribute="centerY" secondItem="YtP-Uy-0sj" secondAttribute="centerY" id="GMb-Qx-baI"/>
+                                                <constraint firstItem="u3O-FS-Z4y" firstAttribute="centerY" secondItem="JP8-0x-aot" secondAttribute="centerY" id="JOU-pC-CKL"/>
+                                                <constraint firstAttribute="trailing" secondItem="u3O-FS-Z4y" secondAttribute="trailing" constant="20" id="cuM-Gp-6nP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BK4-6e-BJZ" id="7K2-B9-zrt"/>
                                     <outlet property="delegate" destination="BK4-6e-BJZ" id="Nm7-Rp-3F6"/>
@@ -52,7 +87,7 @@
         <scene sceneID="Te2-zP-UNA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e4X-eI-S3p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Checklist" id="nBp-6f-SrE"/>
+                    <tabBarItem key="tabBarItem" title="Checklist" image="Checklist - Active" id="nBp-6f-SrE"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hbm-M7-pSV">
@@ -69,4 +104,8 @@
             <point key="canvasLocation" x="-82.400000000000006" y="-693.10344827586209"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Checklist - Active" width="23" height="24"/>
+        <image name="icon-cover.png" width="30" height="30"/>
+    </resources>
 </document>

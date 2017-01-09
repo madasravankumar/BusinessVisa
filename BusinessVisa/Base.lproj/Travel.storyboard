@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qms-oK-WeD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qms-oK-WeD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,14 +28,13 @@
             </objects>
             <point key="canvasLocation" x="856.79999999999995" y="-38.23088455772114"/>
         </scene>
-        <!--Item 2-->
+        <!--Travel-->
         <scene sceneID="8U4-08-tQE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qms-oK-WeD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="p8H-Vx-maa"/>
+                    <tabBarItem key="tabBarItem" title="Travel" image="Travel - Active" id="p8H-Vx-maa"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r3n-MI-f5E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,4 +49,7 @@
             <point key="canvasLocation" x="-82.400000000000006" y="-38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Travel - Active" width="25" height="25"/>
+    </resources>
 </document>
