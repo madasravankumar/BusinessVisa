@@ -23,6 +23,8 @@
 		726573AD1DF729D500BEDEDF /* BusinessVisa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 726573AB1DF729D500BEDEDF /* BusinessVisa.xcdatamodeld */; };
 		726573B21DF729D500BEDEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726573B01DF729D500BEDEDF /* LaunchScreen.storyboard */; };
 		CA1C87BA1E23988E00297EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1C87B91E23988E00297EE9 /* Assets.xcassets */; };
+		CAA06A761E2545F9006A527A /* BV_DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA06A751E2545F9006A527A /* BV_DetailsViewController.swift */; };
+		CAA06A781E254ED2006A527A /* BV_DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA06A771E254ED2006A527A /* BV_DetailsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		726573B11DF729D500BEDEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726573B31DF729D500BEDEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA1C87B91E23988E00297EE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAA06A751E2545F9006A527A /* BV_DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BV_DetailsViewController.swift; path = TabController/ChecklistController/BV_DetailsViewController.swift; sourceTree = "<group>"; };
+		CAA06A771E254ED2006A527A /* BV_DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BV_DetailsTableViewCell.swift; path = TabController/ChecklistController/BV_DetailsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				1F105CE41DF8FF5500AF7101 /* BV_ChecklistVC.swift */,
+				CAA06A751E2545F9006A527A /* BV_DetailsViewController.swift */,
+				CAA06A771E254ED2006A527A /* BV_DetailsTableViewCell.swift */,
 			);
 			name = ChecklistController;
 			sourceTree = "<group>";
@@ -201,10 +207,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA06A781E254ED2006A527A /* BV_DetailsTableViewCell.swift in Sources */,
 				726573AD1DF729D500BEDEDF /* BusinessVisa.xcdatamodeld in Sources */,
 				1F105CEA1DF909D400AF7101 /* BV_JsonData.swift in Sources */,
 				726573A71DF729D500BEDEDF /* ViewController.swift in Sources */,
 				1F105CE51DF8FF5500AF7101 /* BV_ChecklistVC.swift in Sources */,
+				CAA06A761E2545F9006A527A /* BV_DetailsViewController.swift in Sources */,
 				726573A51DF729D500BEDEDF /* AppDelegate.swift in Sources */,
 				1F105CE21DF8FDE800AF7101 /* BV_TabBarController.swift in Sources */,
 			);

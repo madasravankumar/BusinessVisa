@@ -46,19 +46,22 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "detailsCell" {
+            if let indexPath = self.table.indexPath(for: sender as! UITableViewCell) {
+                let sectionData: Section = self.sections[indexPath.row]
+                let detailsVc = segue.destination as! BV_DetailsViewController
+                detailsVc.sectionsData = sectionData.checkListData.object(forKey: "ListOfItems") as! NSArray
+            }
+        }
     }
-    */
 
-
-    
-    
     // MARK: - UITableViewDataSource Methods
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1 //sections.count
@@ -84,36 +87,12 @@ class BV_ChecklistVC: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
         
     }
-    
 
-  /*
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return tableArray.name
-    }
- */
-    
     // MARK: - UITableViewDelegate Methods
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         
     }
-    
-    
-    /*
-     
-    func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return sections[indexPath.section].collapsed! ? 0 : 44.0
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 44.0
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 1.0
-    }
-*/
-    
 }
 
 

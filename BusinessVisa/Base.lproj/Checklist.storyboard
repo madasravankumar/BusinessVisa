@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="56" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="myE-Ut-JVl" id="YtP-Uy-0sj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="JP8-0x-aot">
@@ -45,7 +45,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="ONk-Dk-Dpq"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -58,6 +58,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="u3O-FS-Z4y" secondAttribute="trailing" constant="20" id="cuM-Gp-6nP"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Naa-9H-uJn" kind="show" identifier="detailsCell" id="Jvj-hc-4TC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -83,6 +86,82 @@
             </objects>
             <point key="canvasLocation" x="856.79999999999995" y="-693.10344827586209"/>
         </scene>
+        <!--Details View Controller-->
+        <scene sceneID="9mt-ql-F9u">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Naa-9H-uJn" customClass="BV_DetailsViewController" customModule="BusinessVisa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gg6-tk-tak"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ja4-Hu-F8r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OMT-Oa-jsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="15" sectionFooterHeight="15" translatesAutoresizingMaskIntoConstraints="NO" id="PTf-g2-K8r">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailsCell" rowHeight="44" id="TUo-ia-nIl" customClass="BV_DetailsTableViewCell" customModule="BusinessVisa" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TUo-ia-nIl" id="PPh-Je-mKS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPi-Xl-Lff">
+                                                    <rect key="frame" x="15" y="7" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="7mL-2d-kdL"/>
+                                                        <constraint firstAttribute="height" constant="30" id="99O-JL-leW"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Tick"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMI-OM-ycT">
+                                                    <rect key="frame" x="53" y="10" width="314" height="24"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pMI-OM-ycT" firstAttribute="leading" secondItem="jPi-Xl-Lff" secondAttribute="trailing" constant="8" id="2XE-bs-pUQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="pMI-OM-ycT" secondAttribute="bottom" constant="10" id="4HK-ox-gpe"/>
+                                                <constraint firstAttribute="trailing" secondItem="pMI-OM-ycT" secondAttribute="trailing" constant="8" id="84q-sv-J94"/>
+                                                <constraint firstItem="jPi-Xl-Lff" firstAttribute="leading" secondItem="PPh-Je-mKS" secondAttribute="leading" constant="15" id="NHa-Hk-CmK"/>
+                                                <constraint firstItem="jPi-Xl-Lff" firstAttribute="centerY" secondItem="PPh-Je-mKS" secondAttribute="centerY" id="cd7-Yq-CY1"/>
+                                                <constraint firstItem="pMI-OM-ycT" firstAttribute="top" secondItem="PPh-Je-mKS" secondAttribute="top" constant="10" id="znt-ek-rBB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tickButton" destination="jPi-Xl-Lff" id="5Sv-QH-1l6"/>
+                                            <outlet property="titleLbl" destination="pMI-OM-ycT" id="nyD-OF-NG3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Naa-9H-uJn" id="Ryj-s1-Yzs"/>
+                                    <outlet property="delegate" destination="Naa-9H-uJn" id="c3w-OY-P74"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PTf-g2-K8r" secondAttribute="trailing" id="11z-nY-D40"/>
+                            <constraint firstItem="PTf-g2-K8r" firstAttribute="top" secondItem="Gg6-tk-tak" secondAttribute="bottom" id="AK8-au-TRH"/>
+                            <constraint firstItem="PTf-g2-K8r" firstAttribute="leading" secondItem="OMT-Oa-jsS" secondAttribute="leading" id="Wam-t4-0k3"/>
+                            <constraint firstItem="Ja4-Hu-F8r" firstAttribute="top" secondItem="PTf-g2-K8r" secondAttribute="bottom" id="jPR-Cc-xgp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="PTf-g2-K8r" id="Fdy-es-gUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2x-oi-zIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="-693.10344827586209"/>
+        </scene>
         <!--Checklist-->
         <scene sceneID="Te2-zP-UNA">
             <objects>
@@ -106,6 +185,7 @@
     </scenes>
     <resources>
         <image name="Checklist - Active" width="23" height="24"/>
+        <image name="Tick" width="20" height="20"/>
         <image name="icon-cover.png" width="30" height="30"/>
     </resources>
 </document>

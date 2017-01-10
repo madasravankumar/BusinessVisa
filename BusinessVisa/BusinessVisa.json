@@ -9,20 +9,74 @@
                   "image": "VISA PROCESS",
                   "ListOfItems": [
                                   {
-                                  "title": "Before Applications",
-                                  "subTitle": ""
+                                  "title": "Documents required prior to B1 Application",
+                                  "items": [
+                                                    {
+                                                        "itemName": "Port of Entry (POE) letter from Client (WCM) Signed on official Letter Head"
+                                                    },
+                                                    {
+                                                        "itemName": "Business Visa Letter from Employer (Gemini) Signed on Official Letter Head"
+                                                    },
+                                                    {
+                                                        "itemName": "Accomodation Confirmation"
+                                                    },
+                                                    {
+                                                        "itemName": "Form 16s and IT Filing confirmations for the last 3 years. If you were employed for less than 3 years, provide Form 16s received till date."
+                                                    },
+                                                    {
+                                                        "itemName": "Bank statements and Payslips for the past 6 months"
+                                                    },
+                                                    {
+                                                        "itemName": "All past and present offer letters and relieving letters (Originals and copies) along with 3 payslips per employer"
+                                                    },
+                                                    {
+                                                        "itemName": "Educational Certificates from 10th onwards, Originals and copies."
+                                                    },
+                                            ]
                                   },
                                   {
-                                  "title": "Biometrics",
-                                  "subTitle": ""
+                                  "title": "Documents to be carried for Biometrics Appointment",
+                                  "items": [
+                                            {
+                                            "itemName": "Port of Entry (POE) letter from Client (WCM) Signed on official Letter Head"
+                                            },
+                                            {
+                                            "itemName": "Business Visa Letter from Employer (Gemini) Signed on Official Letter Head"
+                                            }
+                                            ]
                                   },
                                   {
-                                  "title": "Interview",
-                                  "subTitle": ""
+                                  "title": "Documents to be carried for Interview",
+                                  "items": [
+                                            {
+                                            "itemName": "Port of Entry (POE) letter from Client (WCM) Signed on official Letter Head"
+                                            },
+                                            {
+                                            "itemName": "Business Visa Letter from Employer (Gemini) Signed on Official Letter Head"
+                                            }
+                                            ]
                                   },
                                   {
-                                  "title": "Visa Pickup",
-                                  "subTitle": ""
+                                  "title": "Pick Up Visa",
+                                  "items": [
+                                            {
+                                            "itemName": "Port of Entry (POE) letter from Client (WCM) Signed on official Letter Head"
+                                            },
+                                            {
+                                            "itemName": "Business Visa Letter from Employer (Gemini) Signed on Official Letter Head"
+                                            }
+                                            ]
+                                  },
+                                  {
+                                  "title": "Arrange for Currency and Travel Card",
+                                  "items": [
+                                            {
+                                            "itemName": "Port of Entry (POE) letter from Client (WCM) Signed on official Letter Head"
+                                            },
+                                            {
+                                            "itemName": "Business Visa Letter from Employer (Gemini) Signed on Official Letter Head"
+                                            }
+                                            ]
                                   }
                                   ]
                   },
