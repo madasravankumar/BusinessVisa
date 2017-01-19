@@ -12,6 +12,7 @@ class BV_DetailsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var tickButton: UIButton!
     @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var subTitleLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
